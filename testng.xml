@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoAutomationSuite" parallel="methods" thread-count="4">
+    <parameter name="baseUrl" value="https://demo.automationtesting.in/"/>
+    <parameter name="browser" value="chrome"/>
+
+    <test name="DemoAutomationTests">
+        <classes>
+            <class name="org.example.tests.DemoSiteTest"/>
+            <class name="org.example.tests.SwitcghToPtest"/>
+        </classes>
+    </test>
+</suite>
